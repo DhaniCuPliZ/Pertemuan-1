@@ -18,10 +18,10 @@
         </style>
     @endif
 </head>
-<body class="bg-[#FDFDFC] text-[#1b1b18] min-h-screen flex items-center justify-center">
+<body class="bg-[#FDFDFC] text-[#1b1b18] h-screen flex items-center justify-center">
 
-    <div class="bg-white shadow-lg rounded-lg p-10 text-center">
-        <h1 class="text-3xl font-bold mb-4">
+    <div class="bg-white shadow-lg rounded-lg p-10 text-center flex flex-col items-center justify-center">
+        <h1 class="text-xl font-bold mb-4">
             Rafli Ramadhani Oktavianto Khufi
         </h1>
         <p class="text-xl mb-6">
