@@ -26,6 +26,13 @@ CREATE <img width="1897" height="969" alt="gambar" src="https://github.com/user-
 <img width="1918" height="969" alt="gambar" src="https://github.com/user-attachments/assets/ea7b1169-5eef-445a-aaad-1ff7080c1ef7" />
 <img width="1916" height="962" alt="gambar" src="https://github.com/user-attachments/assets/8712e3b0-44cb-438d-9aa9-443ef594aebc" />
 
+UPDATE <img width="1918" height="963" alt="gambar" src="https://github.com/user-attachments/assets/cba0bb7a-6a80-4c42-896a-ba5756f4ec01" />
+<img width="1919" height="469" alt="gambar" src="https://github.com/user-attachments/assets/a3907b1f-dc23-4bc0-9665-9604c422450b" />
+
+DELETE <img width="1918" height="624" alt="gambar" src="https://github.com/user-attachments/assets/e3f4629d-dd10-4e98-b750-d39c32b8f7de" />
+<img width="1919" height="519" alt="gambar" src="https://github.com/user-attachments/assets/cc4ed672-6684-4fe5-8677-f84f4727b4e2" />
+
+
 
 
 
