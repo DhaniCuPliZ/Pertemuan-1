@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    
     public function index()
     {
         $products = Product::paginate(10);
@@ -49,6 +50,8 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
 
+        $this->authorize('update', $product);
+
         $validated = $request->validate([
             'name' => 'sometimes|string|max:255',
             'quantity' => 'sometimes|integer',
@@ -70,6 +73,8 @@ class ProductController extends Controller
 
     public function edit(Product $product)
     {
+        $this->authorize('update', $product);
+
         $users = User::orderBy('name')->get();
         return view('product.edit', compact('product', 'users'));
     }
@@ -77,6 +82,7 @@ class ProductController extends Controller
     public function delete($id)
     {
         $product = Product::findOrFail($id);
+        $this->authorize('delete', $product);
         $product->delete();
 
         return redirect()->route('product.index')
