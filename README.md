@@ -32,7 +32,23 @@ UPDATE <img width="1918" height="963" alt="gambar" src="https://github.com/user-
 DELETE <img width="1918" height="624" alt="gambar" src="https://github.com/user-attachments/assets/e3f4629d-dd10-4e98-b750-d39c32b8f7de" />
 <img width="1919" height="519" alt="gambar" src="https://github.com/user-attachments/assets/cc4ed672-6684-4fe5-8677-f84f4727b4e2" />
 
+TUGAS 5
 
+Pengujian 1 — Persiapan Role untuk mengetahaui role nya dengan commant php artisan tinker
+<img width="1106" height="739" alt="gambar" src="https://github.com/user-attachments/assets/ce2d0b2f-2a5a-44f1-8c1d-7d5fbb1dc349" />
 
+Pengujian 2 — Gate manage-product Admin melihat menu Product di navigasi (dapat melihat tombol Delete,Edit,Detail untuk semua produk admin)
+<img width="1920" height="1080" alt="gambar" src="https://github.com/user-attachments/assets/3445cf93-0ae1-42d6-9211-6739e4264dcd" />
 
+Di Navbar Regular User menu Product tidak muncul
+<img width="1920" height="1080" alt="gambar" src="https://github.com/user-attachments/assets/f5cf68fb-6183-4c3d-bd83-6641001f14b2" />
+
+Regular user mendapat 403 saat coba edit produk milik orang lain
+<img width="1920" height="1080" alt="gambar" src="https://github.com/user-attachments/assets/6d67b52c-714e-4879-b4d0-a71f9f585759" />
+
+Pengujian 3 Policy admin pilih User Reguler sebagai Owner
+<img width="1920" height="1080" alt="gambar" src="https://github.com/user-attachments/assets/3f5d757d-497c-4945-a2fe-5c69561e0ad0" />
+<img width="1920" height="1080" alt="gambar" src="https://github.com/user-attachments/assets/8e5edaba-08b1-4056-b484-0fe399bd1b6f" />
+
+Tombol Edit & Delete hanya muncul untuk produk milik sendiri (regular user)
 
