@@ -51,4 +51,5 @@ Pengujian 3 Policy admin pilih User Reguler sebagai Owner
 <img width="1920" height="1080" alt="gambar" src="https://github.com/user-attachments/assets/8e5edaba-08b1-4056-b484-0fe399bd1b6f" />
 
 Tombol Edit & Delete hanya muncul untuk produk milik sendiri (regular user)
+<img width="1920" height="1080" alt="gambar" src="https://github.com/user-attachments/assets/40bbfea0-1e98-4f68-b950-d2bcdf845068" />
 
