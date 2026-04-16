@@ -23,23 +23,14 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// Semua user login bisa akses
 Route::middleware(['auth'])->group(function () {
     Route::get('/product', [ProductController::class, 'index'])->name('product.index');
-    Route::get('/product/{id}', [ProductController::class, 'show'])->name('product.show');
-});
-
-// Hanya admin/pemilik produk
-Route::middleware(['auth', 'can:manage-product'])->group(function () {
     Route::get('/product/create', [ProductController::class, 'create'])->name('product.create');
     Route::post('/product', [ProductController::class, 'store'])->name('product.store');
-});
-
-// Edit & delete pakai Policy (cek kepemilikan)
-Route::middleware(['auth'])->group(function () {
-    Route::get('/product/edit/{product}', [ProductController::class, 'edit'])->name('product.edit');
-    Route::put('/product/update/{id}', [ProductController::class, 'update'])->name('product.update');
-    Route::delete('/product/delete/{id}', [ProductController::class, 'delete'])->name('product.delete');
+    Route::get('/product/{product}', [ProductController::class, 'show'])->name('product.show');
+    Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('product.edit');
+    Route::put('/product/{product}', [ProductController::class, 'update'])->name('product.update');
+    Route::delete('/product/{product}', [ProductController::class, 'delete'])->name('product.delete');
 });
 
 require __DIR__.'/auth.php';

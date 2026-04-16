@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreProductRequest;   // ✅ tambahkan
+use App\Http\Requests\UpdateProductRequest;  // ✅ tambahkan
+use Illuminate\Support\Facades\Gate;
 
 class ProductController extends Controller
 {
@@ -17,21 +20,29 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'quantity' => 'required|integer',
-            'price' => 'required|numeric',
-            'user_id' => 'required|exists:users,id',
-        ]);
+    $validated = $request->validate([
+        'name' => 'required|string|min:3|max:255',
+        'quantity' => 'required|integer|min:0',
+        'price' => 'required|numeric|min:0',
+        'user_id' => 'required|exists:users,id',
+    ], [
+        'name.required' => 'Nama produk wajib diisi!',
+        'name.min' => 'Nama minimal 3 karakter!',
+        'quantity.required' => 'Quantity wajib diisi!',
+        'quantity.integer' => 'Quantity harus berupa angka!',
+        'price.required' => 'Harga wajib diisi!',
+        'price.numeric' => 'Harga harus berupa angka!',
+        'user_id.required' => 'User harus dipilih!',
+    ]);
 
-        // mapping quantity -> qty
-        $validated['qty'] = $validated['quantity'];
-        unset($validated['quantity']);
+    // mapping quantity -> qty
+    $validated['qty'] = $validated['quantity'];
+    unset($validated['quantity']);
 
-        Product::create($validated);
+    Product::create($validated);
 
-        return redirect()->route('product.index')
-            ->with('success', 'Product created successfully.');
+    return redirect()->route('product.index')
+        ->with('success', 'Product berhasil ditambahkan!');
     }
 
     public function create()
@@ -48,27 +59,30 @@ class ProductController extends Controller
 
     public function update(Request $request, $id)
     {
-        $product = Product::findOrFail($id);
+    $product = Product::findOrFail($id);
 
-        $this->authorize('update', $product);
+    $this->authorize('update', $product);
 
-        $validated = $request->validate([
-            'name' => 'sometimes|string|max:255',
-            'quantity' => 'sometimes|integer',
-            'price' => 'sometimes|numeric',
-            'user_id' => 'sometimes|exists:users,id',
-        ]);
+    $validated = $request->validate([
+        'name' => 'required|string|min:3|max:255',
+        'quantity' => 'required|integer|min:0',
+        'price' => 'required|numeric|min:0',
+        'user_id' => 'required|exists:users,id',
+    ], [
+        'name.required' => 'Nama produk wajib diisi!',
+        'quantity.required' => 'Quantity wajib diisi!',
+        'price.required' => 'Harga wajib diisi!',
+        'user_id.required' => 'User harus dipilih!',
+    ]);
 
-        // mapping quantity -> qty
-        if(isset($validated['quantity'])){
-            $validated['qty'] = $validated['quantity'];
-            unset($validated['quantity']);
-        }
+    // mapping quantity -> qty
+    $validated['qty'] = $validated['quantity'];
+    unset($validated['quantity']);
 
-        $product->update($validated);
+    $product->update($validated);
 
-        return redirect()->route('product.index')
-            ->with('success', 'Product updated successfully.');
+    return redirect()->route('product.index')
+        ->with('success', 'Product berhasil diupdate!');
     }
 
     public function edit(Product $product)

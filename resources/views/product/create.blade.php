@@ -22,6 +22,18 @@
                     </div>
 
                     {{-- Form --}}
+
+                    @if ($errors->any())
+                        <div class="mb-4 p-4 bg-red-100 border border-red-300 text-red-700 rounded-lg">
+                            <ul class="list-disc pl-5 text-sm">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    
+
                     <form action="{{ route('product.store') }}" method="POST" class="space-y-5">
                         @csrf
 
