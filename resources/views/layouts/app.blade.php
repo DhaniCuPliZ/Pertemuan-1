@@ -20,16 +20,21 @@
 
             <!-- Page Heading -->
             @isset($header)
-                <header class="bg-gray-800 shadow">
+                <header class="bg-slate-900/50 border-b border-slate-800 backdrop-blur-sm">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
+                        <div class="text-white font-bold text-2xl tracking-tight">
+                            {{ $header }}
+                        </div>
                     </div>
                 </header>
             @endisset
 
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+                @isset($slot)
+                    {{ $slot }}
+                @endisset
+                @yield('content')
             </main>
         </div>
     </body>

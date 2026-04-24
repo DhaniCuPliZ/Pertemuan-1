@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController; 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\CategoryController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -31,6 +32,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('product.edit');
     Route::put('/product/{product}', [ProductController::class, 'update'])->name('product.update');
     Route::delete('/product/{product}', [ProductController::class, 'delete'])->name('product.delete');
+    Route::resource('category', CategoryController::class);
 });
 
 require __DIR__.'/auth.php';

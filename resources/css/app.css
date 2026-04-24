@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .glass {
+        @apply bg-white/10 backdrop-blur-md border border-white/20;
+    }
+
+    .glass-dark {
+        @apply bg-slate-900/50 backdrop-blur-xl border border-slate-700/50;
+    }
+
+    .gradient-text {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500;
+    }
+
+    .premium-card {
+        @apply glass-dark rounded-3xl shadow-2xl overflow-hidden transition-all duration-300 hover:shadow-indigo-500/10;
+    }
+
+    .premium-btn {
+        @apply px-6 py-2.5 rounded-xl font-semibold transition-all duration-300 active:scale-95;
+    }
+
+    .premium-btn-primary {
+        @apply premium-btn bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg shadow-indigo-600/20 hover:shadow-indigo-600/40 hover:-translate-y-0.5;
+    }
+}
+
+body {
+    background: radial-gradient(circle at top left, #1e1b4b, #0f172a 40%);
+}
