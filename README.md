@@ -53,3 +53,30 @@ Pengujian 3 Policy admin pilih User Reguler sebagai Owner
 Tombol Edit & Delete hanya muncul untuk produk milik sendiri (regular user)
 <img width="1920" height="1080" alt="gambar" src="https://github.com/user-attachments/assets/40bbfea0-1e98-4f68-b950-d2bcdf845068" />
 
+TUGAS 6
+TEST VALIDASI
+
+Test Store (Add Product)<img width="1887" height="859" alt="Cuplikan layar 2026-04-16 220401" src="https://github.com/user-attachments/assets/7b1ba497-3360-4314-b862-e1d71d447e75" />
+
+isi nama dengan angka <img width="1868" height="717" alt="Cuplikan layar 2026-04-16 220555" src="https://github.com/user-attachments/assets/e2379639-dd74-4ada-bff4-c5b4d480057e" />
+
+isi jumlah dengan huruf <img width="1874" height="633" alt="Cuplikan layar 2026-04-16 221621" src="https://github.com/user-attachments/assets/4d894ec7-040d-4c88-9c5c-815623727bb4" />
+
+isi harga dengan huruf <img width="1899" height="615" alt="Cuplikan layar 2026-04-16 221635" src="https://github.com/user-attachments/assets/d4a3617e-b67a-455e-9659-10958cc6817b" />
+
+isi semua dengan mengosongkan owner <img width="1881" height="720" alt="Cuplikan layar 2026-04-16 221706" src="https://github.com/user-attachments/assets/2e1a46bc-6aae-41bd-bb1a-0b6877ea20a7" />
+
+TEST UPDATE (edit product)
+nama product kosong <img width="1887" height="720" alt="gambar" src="https://github.com/user-attachments/assets/1a12bc69-58de-4cb5-8b6c-1603a8f68082" />
+
+jumlah product kosong <img width="1909" height="633" alt="gambar" src="https://github.com/user-attachments/assets/f720ed48-44ba-4376-ac59-f7fb4d1153bd" />
+
+jumlah harga kosong <img width="1916" height="754" alt="gambar" src="https://github.com/user-attachments/assets/547e3f0c-7095-4c80-a316-e91c49805295" />
+
+owner kosong <img width="1914" height="754" alt="gambar" src="https://github.com/user-attachments/assets/8bc842b1-ee73-4d0c-b2cf-fb3e15549ddf" />
+
+<img width="1457" height="723" alt="gambar" src="https://github.com/user-attachments/assets/0567900f-b258-450f-9e5b-b11aa815b80c" />
+
+Tugas 7
+<img width="1899" height="737" alt="image" src="https://github.com/user-attachments/assets/baf15db9-e6d3-4a69-8653-1603079396e2" />
+
