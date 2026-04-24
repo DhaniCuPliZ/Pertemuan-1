@@ -76,3 +76,7 @@ jumlah harga kosong <img width="1916" height="754" alt="gambar" src="https://git
 owner kosong <img width="1914" height="754" alt="gambar" src="https://github.com/user-attachments/assets/8bc842b1-ee73-4d0c-b2cf-fb3e15549ddf" />
 
 <img width="1457" height="723" alt="gambar" src="https://github.com/user-attachments/assets/0567900f-b258-450f-9e5b-b11aa815b80c" />
+
+Tugas 7
+<img width="1899" height="737" alt="image" src="https://github.com/user-attachments/assets/baf15db9-e6d3-4a69-8653-1603079396e2" />
+
