@@ -80,3 +80,12 @@ owner kosong <img width="1914" height="754" alt="gambar" src="https://github.com
 Tugas 7
 <img width="1899" height="737" alt="image" src="https://github.com/user-attachments/assets/baf15db9-e6d3-4a69-8653-1603079396e2" />
 
+UCP1_20230140127
+create category 
+<img width="1884" height="675" alt="image" src="https://github.com/user-attachments/assets/645bb7a0-02e8-4b08-b187-bbd6ab64346f" />
+
+Category list 
+<img width="1908" height="661" alt="image" src="https://github.com/user-attachments/assets/1de8e461-b199-4ee9-885a-648f5246f526" />
+
+Tambah produk dengan category yang sudah di buat 
+<img width="1872" height="835" alt="image" src="https://github.com/user-attachments/assets/76da7677-65cb-4ade-8d43-0951e13f1f04" />
